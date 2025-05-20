@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# Angular
+sentEvent/node_modules/
+sentEvent/dist/
+sentEvent/.angular/
+
+# Logs
+logs
+*.log
+sent-event-node/logs/
+
+# Compilazione e dipendenze
+sent-event-node/node_modules/
+sent-event-node/build/
+sent-event-node/dist/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+.dockerignore

@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./sent-events-node
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./sent-events-node:/app
+    environment:
+      - NODE_ENV=production
+
+  frontend:
+    build:
+      context: ./sentEvent
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
